@@ -17,7 +17,6 @@ This repository contains a Spring Boot-based backend application for tracking fi
 6. [Database Access (H2 Console)](#6-database-access-h2-console)
 7. [API Endpoints](#7-api-endpoints)
 8. [Project Structure](#8-project-structure)
-9. [Future Improvements](#9-future-improvements)
 
 ---
 
@@ -83,7 +82,7 @@ mvn spring-boot:run
 Once started, the application will be available at:
 📍 http://localhost:8080
 
-6. Database Access (H2 Console)
+## 6. Database Access (H2 Console)
 This project uses an in-memory H2 database, which resets on every restart.
 
 🔑 Access the H2 web console at:
@@ -97,22 +96,22 @@ Password: (leave blank)
 
 💡 Tip: You can use the console to directly inspect the tables and test SQL queries.
 
- 7. API Endpoints📡
+## 7. API Endpoints📡
 🧾 Transaction Endpoints
 | Method | Endpoint                            | Description                                 |
 | ------ | ----------------------------------- | ------------------------------------------- |
-| POST   | `/transactions/add`                 | Add a new transaction                       |
-| GET    | `/transactions/all`                 | Get all transactions                        |
-| GET    | `/transactions/category/{category}` | Get transactions by category                |
-| GET    | `/transactions/date/{start}/{end}`  | Get transactions in a date range            |
-| GET    | `/transactions/type/{type}`         | Get transactions by type (INCOME / EXPENSE) |
-| PUT    | `/transactions/update/{id}`         | Update a transaction by ID                  |
-| DELETE | `/transactions/remove/{id}`         | Delete a transaction by ID                  |
-| GET    | `/transactions/summary`             | Get total income, expense, and net balance  |
+| POST   | /transactions/add                   | Add a new transaction                       |
+| GET    | /transactions/all                   | Get all transactions                        |
+| GET    | /transactions/category/{category}   | Get transactions by category                |
+| GET    | /transactions/date/{start}/{end}    | Get transactions in a date range            |
+| GET    | /transactions/type/{type}           | Get transactions by type (INCOME / EXPENSE) |
+| PUT    | /transactions/update/{id}           | Update a transaction by ID                  |
+| DELETE | /transactions/remove/{id}           | Delete a transaction by ID                  |
+| GET    | /transactions/summary               | Get total income, expense, and net balance  |
 
 ✅ Use tools like Postman or curl to test these endpoints.
 
-8. Project Structure
+## 8. Project Structure
 expense-tracker/
 ├── controller/         # REST API controllers
 ├── dto/                # Data Transfer Objects
