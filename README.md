@@ -83,7 +83,7 @@ mvn spring-boot:run
 Once started, the application will be available at:
 📍 http://localhost:8080
 
-🗄️ Database Access (H2 Console)
+6. Database Access (H2 Console)
 This project uses an in-memory H2 database, which resets on every restart.
 
 🔑 Access the H2 web console at:
@@ -97,7 +97,7 @@ Password: (leave blank)
 
 💡 Tip: You can use the console to directly inspect the tables and test SQL queries.
 
-📡 API Endpoints
+ 7. API Endpoints📡
 🧾 Transaction Endpoints
 | Method | Endpoint                            | Description                                 |
 | ------ | ----------------------------------- | ------------------------------------------- |
@@ -112,7 +112,7 @@ Password: (leave blank)
 
 ✅ Use tools like Postman or curl to test these endpoints.
 
-🧱 Project Structure
+8. Project Structure
 expense-tracker/
 ├── controller/         # REST API controllers
 ├── dto/                # Data Transfer Objects
