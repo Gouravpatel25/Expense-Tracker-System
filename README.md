@@ -119,7 +119,8 @@ expense-tracker/
 ├── repository/         # Spring Data JPA repositories
 ├── service/            # Business logic layer
 └── resources/
-    └── application.properties  # Spring Boot configuration
+    └── application.properties
+
 
 📌 Notes
 This is a backend-only project — no frontend is included yet.
